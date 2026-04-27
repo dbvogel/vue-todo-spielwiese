@@ -1,0 +1,30 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Vermieter-Tool Logo</title>
+  <desc id="logoDesc">Stylized building mark with roof and check, representing professional property management.</desc>
+  <defs>
+    <linearGradient id="roofGradient" x1="128" y1="32" x2="128" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#66A4FF"/>
+      <stop offset="1" stop-color="#0F5FD6"/>
+    </linearGradient>
+    <linearGradient id="bodyGradient" x1="48" y1="86" x2="208" y2="224" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF2FF"/>
+      <stop offset="1" stop-color="#CFE1FB"/>
+    </linearGradient>
+    <linearGradient id="checkGradient" x1="76" y1="168" x2="188" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1AC7A6"/>
+      <stop offset="1" stop-color="#0A9A84"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M20 116L128 36L236 116" stroke="url(#roofGradient)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="52" y="92" width="152" height="136" rx="24" fill="url(#bodyGradient)" stroke="#8EB2E8" stroke-width="6"/>
+
+  <rect x="80" y="120" width="24" height="24" rx="6" fill="#9CBCEB"/>
+  <rect x="116" y="120" width="24" height="24" rx="6" fill="#9CBCEB"/>
+  <rect x="152" y="120" width="24" height="24" rx="6" fill="#9CBCEB"/>
+
+  <rect x="108" y="160" width="40" height="52" rx="10" fill="#8BADE0"/>
+
+  <path d="M84 182L112 206L176 154" stroke="url(#checkGradient)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
