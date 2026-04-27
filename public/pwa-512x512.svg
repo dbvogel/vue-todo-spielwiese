@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Vermieter Tool Icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b3a6f"/>
+      <stop offset="100%" stop-color="#0ea5b7"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="472" height="472" rx="100" fill="url(#bg)"/>
+  <path d="M132 266L256 156L380 266V384H298V304H214V384H132Z" fill="#f8fbff"/>
+  <rect x="168" y="210" width="24" height="24" rx="5" fill="#0b3a6f"/>
+  <rect x="204" y="210" width="24" height="24" rx="5" fill="#0b3a6f"/>
+  <rect x="320" y="210" width="24" height="24" rx="5" fill="#0b3a6f"/>
+</svg>
