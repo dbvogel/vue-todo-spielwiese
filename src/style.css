@@ -794,6 +794,299 @@ body::before {
 .vm-btn-green:hover { filter: brightness(0.9); }
 .vm-btn-red   { background: #fee2e2; color: #991b1b; }
 .vm-btn-red:hover { filter: brightness(0.9); }
+.vm-btn-ai    { background: #ede9fe; color: #5b21b6; font-size: 0.75rem; padding: 0 0.55rem; }
+.vm-btn-ai:hover:not(:disabled) { filter: brightness(0.92); }
+.vm-btn-ai:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.vm-panel-title-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.35rem;
+}
+
+.vm-panel-title-row .vm-panel-title {
+	margin: 0;
+}
+
+.vm-dashboard-panel-ai {
+	grid-column: 1 / -1;
+}
+
+.vm-ai-summary-text {
+	font-size: 0.78rem;
+	line-height: 1.55;
+	color: var(--text-main);
+	margin: 0;
+}
+
+/* ── Monthly Report tab ─────────────────────────────────────── */
+.vm-report-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	padding: 0.45rem 0 0.6rem;
+	border-bottom: 1px solid var(--card-border);
+	margin-bottom: 0.75rem;
+}
+
+.vm-report-meta {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+}
+
+.vm-report-loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+.vm-report-loading-text {
+	font-size: 0.78rem;
+	color: var(--text-muted, #64748b);
+	animation: vm-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes vm-pulse {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.4; }
+}
+
+.vm-report-body {
+	font-size: 0.82rem;
+	line-height: 1.65;
+	color: var(--text-main);
+	overflow-y: auto;
+	max-height: 500px;
+	padding-right: 0.25rem;
+}
+
+.vm-report-body .vm-report-h4 {
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: var(--heading);
+	margin: 1.1rem 0 0.35rem;
+	padding-bottom: 0.2rem;
+	border-bottom: 1px solid var(--card-border);
+}
+
+.vm-report-body .vm-report-h4:first-child {
+	margin-top: 0;
+}
+
+.vm-report-body .vm-report-ul {
+	list-style: disc;
+	padding-left: 1.2rem;
+	margin: 0.25rem 0 0.5rem;
+}
+
+.vm-report-body .vm-report-ul li {
+	margin-bottom: 0.15rem;
+}
+
+.vm-report-body .vm-report-p {
+	margin: 0.35rem 0;
+}
+
+.vm-report-placeholder {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	padding: 1.5rem 0;
+	font-size: 0.8rem;
+	color: var(--text-muted, #64748b);
+}
+
+.vm-report-placeholder-hint {
+	font-size: 0.73rem;
+	opacity: 0.75;
+}
+
+/* ── AI Settings panel ──────────────────────────────────────── */
+.vm-theme-btn-active {
+	background: #ede9fe;
+	color: #5b21b6;
+	border-color: #c4b5fd;
+}
+
+.vm-ai-settings {
+	display: flex;
+	flex-direction: column;
+	gap: 0.55rem;
+	padding: 0.65rem 0.75rem;
+	margin: 0 0 0.5rem;
+	background: var(--surface-1);
+	border: 1px solid #c4b5fd;
+	border-radius: 10px;
+}
+
+.vm-ai-settings-row {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.vm-ai-settings-label {
+	font-size: 0.7rem;
+	font-weight: 600;
+	color: var(--heading);
+	min-width: 68px;
+	white-space: nowrap;
+}
+
+.vm-ai-settings-input {
+	flex: 1;
+	min-width: 0;
+}
+
+.vm-ai-provider-toggle {
+	display: flex;
+	gap: 0.35rem;
+}
+
+.vm-provider-btn {
+	font-size: 0.72rem;
+	font-weight: 500;
+	padding: 0.22rem 0.65rem;
+	border-radius: 6px;
+	border: 1px solid var(--card-border);
+	background: var(--surface-2, #f8fafc);
+	color: var(--text-main);
+	cursor: pointer;
+	transition: all 120ms ease;
+}
+
+.vm-provider-btn-active {
+	background: #ede9fe;
+	color: #5b21b6;
+	border-color: #c4b5fd;
+}
+
+.vm-ai-settings-hint {
+	font-size: 0.68rem;
+	color: var(--text-muted, #64748b);
+	margin: 0;
+}
+
+.vm-link {
+	color: #2563eb;
+	text-decoration: underline;
+}
+
+/* ── KI-Chat tab ─────────────────────────────────────────────── */
+.vm-chat-tab {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	height: 100%;
+}
+
+.vm-chat-messages {
+	flex: 1;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.55rem;
+	min-height: 220px;
+	max-height: 420px;
+	padding: 0.25rem 0.1rem;
+}
+
+.vm-chat-empty {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding: 1.5rem 0;
+	font-size: 0.8rem;
+	color: var(--text-muted, #64748b);
+}
+
+.vm-chat-empty-hint {
+	font-size: 0.72rem;
+	opacity: 0.75;
+}
+
+.vm-chat-bubble {
+	display: flex;
+	flex-direction: column;
+	gap: 0.18rem;
+	max-width: 88%;
+}
+
+.vm-chat-bubble-user {
+	align-self: flex-end;
+	align-items: flex-end;
+}
+
+.vm-chat-bubble-ai {
+	align-self: flex-start;
+	align-items: flex-start;
+}
+
+.vm-chat-bubble-label {
+	font-size: 0.62rem;
+	font-weight: 600;
+	color: var(--text-muted, #64748b);
+	letter-spacing: 0.05em;
+}
+
+.vm-chat-bubble-text {
+	margin: 0;
+	font-size: 0.8rem;
+	line-height: 1.55;
+	padding: 0.45rem 0.7rem;
+	border-radius: 12px;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.vm-chat-bubble-user .vm-chat-bubble-text {
+	background: #1e40af;
+	color: #fff;
+	border-bottom-right-radius: 3px;
+}
+
+.vm-chat-bubble-ai .vm-chat-bubble-text {
+	background: var(--surface-1);
+	border: 1px solid var(--card-border);
+	color: var(--text-main);
+	border-bottom-left-radius: 3px;
+}
+
+.vm-chat-loading .vm-chat-typing {
+	font-size: 1.1rem;
+	letter-spacing: 0.2em;
+	padding: 0.4rem 0.7rem;
+	background: var(--surface-1);
+	border: 1px solid var(--card-border);
+	border-radius: 12px 12px 12px 3px;
+	animation: vm-pulse 1.2s ease-in-out infinite;
+}
+
+.vm-chat-input-row {
+	display: flex;
+	gap: 0.35rem;
+	align-items: center;
+	padding-top: 0.25rem;
+	border-top: 1px solid var(--card-border);
+}
+
+.vm-chat-input {
+	flex: 1;
+	min-width: 0;
+}
+
+.vm-chat-send {
+	min-width: 2.2rem;
+	font-size: 0.9rem;
+}
 
 .vm-dashboard-grid {
 	display: grid;

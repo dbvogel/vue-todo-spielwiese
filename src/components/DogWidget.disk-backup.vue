@@ -3,7 +3,6 @@ import { onMounted, ref } from 'vue'
 import { dogService } from '../services/dogService'
 import type { DogFact } from '@/types/dogApi'; 
 
-
 //State
 const currentFact = ref<string>('')
 const isLoading = ref(false)

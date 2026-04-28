@@ -23,7 +23,6 @@ export interface DogGroup {
         name: string
     }
 }
-
 export interface ApiResponse<T> {
     data: T[]
 }
